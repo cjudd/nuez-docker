@@ -1,4 +1,4 @@
-FROM tomcat:7.0.65-jre7
+FROM tomcat:7.0-jre7
 
 RUN rm -rf $CATALINA_HOME/webapps/ROOT
 RUN rm -rf $CATALINA_HOME/webapps/ROOT.war
