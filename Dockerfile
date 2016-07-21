@@ -9,6 +9,6 @@ RUN rm -rf $CATALINA_HOME/webapps/host-manager
 
 ENV CATALINA_OPTS -Dgrails.env=docker
 
-ADD https://s3.amazonaws.com/cmj-presentations/docker-clouddevelop-2015/nuez-0.1.war $CATALINA_HOME/webapps/ROOT.war
+ADD nuez.war $CATALINA_HOME/webapps/ROOT.war
 
 CMD ["catalina.sh", "run"]
